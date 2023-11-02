@@ -1,0 +1,550 @@
+/*
+reservation new
+===========================================*/
+section.reservation {
+  letter-spacing: 0.2em;
+  font-size: 14px;
+  margin-top: 100px;
+}
+
+section.reservation h3 {
+  font-size: 18px;
+  font-weight: normal;
+  text-align: center;
+  line-height: 200%;
+  border-top: 1px solid #dd3a76;
+  border-bottom: 1px solid #dd3a76;
+}
+
+section.reservation .note {
+  font-size: 12px;
+  letter-spacing: 0em;
+}
+
+section.reservation > div:not(:nth-child(1)), section.reservation > form#reservation_form {
+  padding: 0 20px;
+  max-width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section.reservation li {
+  list-style: none;
+}
+
+section.reservation div.reservation_fv {
+  text-align: center;
+  padding: 10px 0;
+  margin: 30px 20px;
+  line-height: normal;
+}
+
+section.reservation div.reservation_fv h2 {
+  font-size: 22px;
+  font-weight: normal;
+  background-color: #dd3a76;
+  color: #fff;
+}
+
+section.reservation div.reservation_fv p {
+  color: #dd3a76;
+}
+
+section.reservation div.reservation_flow {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 0;
+}
+
+section.reservation div.reservation_flow ul.reservation_flow_content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+section.reservation div.reservation_flow ul.reservation_flow_content li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 20px;
+    min-width: 80px;
+}
+
+section.reservation div.reservation_flow ul.reservation_flow_content li span {
+    background-color: #EFEFEF;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    position: relative;
+}
+
+section.reservation div.reservation_flow ul.reservation_flow_content li.active span {
+    background-color: #DD3A76;
+    color: #fff;
+}
+
+section.reservation div.reservation_flow ul.reservation_flow_content li:not(:nth-child(3)) span::after {
+    content: "";
+    border-top: 1px solid #EFEFEF;
+    position: absolute;
+    width: 30px;
+    right: -50px;
+}
+
+section.reservation div.reservation_flow ul.reservation_flow_content li p {
+  margin-top: 10px;
+}
+
+section.reservation div.reservation_accordion {
+  margin-bottom: 100px;
+}
+
+section.reservation div.reservation_accordion div.reservation_accordion_head {
+  text-align: center;
+  background-color: #DD3A76;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+section.reservation div.reservation_accordion div.reservation_accordion_head h3 {
+  color: #fff;
+  position: relative;
+  margin: 5px 0;
+}
+
+section.reservation div.reservation_accordion div.reservation_accordion_head button {
+  text-align: center;
+  display: flex;
+  background: none;
+  padding: 0;
+  justify-content: center;
+  position: relative;
+  top: 17px;
+  right: -15px;
+  border-right: 13px solid transparent;
+  border-bottom: 13px solid transparent;
+  border-left: 13px solid transparent;
+  border-top: 13px solid #fff;
+}
+
+section.reservation div.reservation_accordion div.reservation_accordion_body {
+  background-color: #FFEFFB;
+}
+
+section.reservation div.reservation_accordion div.reservation_accordion_body ul {
+  padding: 30px 15px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+section.reservation div.reservation_accordion div.reservation_accordion_body ul li {
+  margin: 20px 0;
+}
+
+section.reservation div.reservation_accordion div.reservation_accordion_body ul li dl {
+  display: flex;
+  justify-content:space-around;
+}
+
+section.reservation div.reservation_accordion div.reservation_accordion_body ul li dl dt {
+  flex: 1;
+  max-width: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+section.reservation div.reservation_accordion div.reservation_accordion_body ul li dl dt span {
+  background-color: #fff;
+  padding: 5px 14px;
+}
+
+section.reservation div.reservation_accordion div.reservation_accordion_body ul li:not(:last-child) dl dt::after {
+  content: "";
+  border: 0.5px solid #000;
+  height: 20px;
+  right: 50%;
+  bottom: -20px;
+  position: absolute;
+}
+
+section.reservation div.reservation_accordion div.reservation_accordion_body ul li dl dd {
+  flex: 1;
+  font-size: 11px;
+  max-width: 138px;
+  border: 0.5px solid #fff;
+  padding: 5px 7px;
+}
+
+section.reservation ul.fields {
+  padding: 0;
+}
+
+section.reservation ul.fields li {
+  margin-bottom: 40px;
+}
+
+section.reservation ul.fields li p:first-child {
+  padding-left: 5px;
+}
+
+section.reservation ul.fields li input,
+section.reservation ul.fields li textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 7px 14px;
+    display: block;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+section.reservation ul.fields li textarea {
+  height: 100px;
+}
+
+section.reservation #submit_btn {
+  font-weight: bold;
+  padding: 10px 10px;
+  width: 80%;
+  margin: 0 10%;
+  appearance: none;
+  outline: none;
+  background: #DD3A76;
+  color: #fff;
+  border: 2px solid #DD3A76;
+  text-align: center;
+}
+
+section.reservation #submit_btn.submitbtn_res2 {
+  width: 80%;
+}
+
+section.reservation #submit_btn:disabled {
+  background: #727171;
+  border: 2px solid #727171;
+}
+
+section.reservation #submit_btn.loading {
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+section.reservation .required,
+section.reservation .alert {
+  margin-top: 10px;
+  color: #DD3A76;
+  font-size: 13px;
+}
+
+section.reservation .formpolicy {
+    margin: 100px 45px 0;
+    padding-top: 15px;
+    border-top: 0.5px solid #868585;
+    font-size: 10px;
+    line-height: 17px;
+    color: #868585;
+}
+
+section.reservation .formpolicy a {
+    color: #2CA0C9;
+}
+
+section.reservation .common-blueBox {
+  padding-left: 5px;
+  font-weight: bold;
+}
+
+section.reservation p.formTitle {
+  font-size: 14px;
+}
+
+section.reservation div.selector_box {
+  margin-bottom: 50px;
+}
+
+section.reservation div.selector_box .selector {
+  display: flex;
+  padding: 0;
+}
+
+section.reservation div.selector_box p {
+  margin: 0;
+}
+
+section.reservation .selector li {
+  padding: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  background-color: #E8E7E7;
+  border: 1px solid #DD3A76;
+}
+
+section.reservation .selector li:not(:last-child) {
+  margin-right: 3px;
+}
+
+section.reservation .selector li.active {
+  background-color: #DD3A76;
+  color: #fff;
+}
+
+section.reservation .set-treatment ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-top: 0;
+}
+
+section.reservation .set-treatment li {
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  font-family: 'Noto Sans JP', sans-serif;
+  border: 1px solid rgba(0, 0, 0, .3);
+  color: rgba(0, 0, 0, .3);
+  border-radius: 100px;
+  padding: 1px 5px;
+  margin: 3px 3px;
+}
+
+section.reservation .set-treatment li span {
+  font-size: 10px;
+  letter-spacing: 0;
+}
+
+section.reservation .set-treatment li.active {
+  border: 1px solid #DD3A76;
+  color: #DD3A76;
+}
+
+section.reservation .calendarHeader {
+  display: flex;
+  margin: 10px;
+  justify-content: space-between;
+}
+
+section.reservation .calendarHeader .prev, section.reservation .calendarHeader .next {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+section.reservation .calendarHeader h4 {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+section.reservation div.calendar {
+  margin-bottom: 50px;
+}
+
+section.reservation .calendarBody .columns {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+section.reservation .calendarBody .columns > li {
+  width: 100%;
+}
+
+section.reservation .calendarBody .rows {
+  width: 100%;
+  padding: 0;
+}
+
+section.reservation .calendarBody .rows > li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  height: 40px;
+  width: 100%;
+  font-weight: bold;
+}
+
+section.reservation .calendarBody .rows.spots > li {
+  align-items: flex-end;
+}
+
+section.reservation .calendarBody .day span {
+  font-size: 13px;
+  font-weight: normal;
+}
+
+section.reservation .calendarBody .day.sunday span {
+  color: #DD3A76;
+}
+
+section.reservation .calendarBody .date {
+  background: #fff;
+  box-sizing: border-box;
+  border: 3px solid #F0F0F0;
+  border-radius: 5px;
+}
+
+section.reservation .calendarBody .date.full {
+  background: #F0F0F0;
+}
+
+section.reservation .calendarBody .date.tel {
+  background: #F0F0F0;
+  fill: #727171;
+  font-weight: bold;
+  letter-spacing: -1px;
+  font-size: 12px;
+}
+
+section.reservation .calendarBody .empty.active,
+section.reservation .calendarBody .few.active {
+  border: 3px solid #DD3A76;
+  background: #DD3A76;
+}
+
+section.reservation .calendarBody .empty svg {
+  fill: #DD3A76;
+}
+
+section.reservation .calendarBody .few svg {
+  fill: #00B900;
+}
+
+section.reservation .calendarBody .empty.active svg,
+section.reservation .calendarBody .few.active svg {
+  fill: #fff;
+}
+
+section.reservation .calendarBody .full svg {
+  fill: #727171;
+}
+
+section.reservation div.cancelCharge ul {
+  padding: 0;
+}
+
+div.complete div.reservation_fv h2 {
+  font-size: 18px
+}
+
+section.reservation div.complete_line {
+  text-align: center;
+  margin: 30px auto 70px;
+}
+
+section.reservation div.complete_line p.common-blueBox {
+  border: 1px solid #DD3A76;
+  border-radius: 5px;
+  padding: 10px 0;
+}
+
+section.reservation div.complete_line p.common-blueBox::before {
+  font-family: "Font Awesome 5 Free";
+  content: '\f071';
+  font-weight: 900;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+section.reservation div.complete_line p.complete_line_text {
+  width: 90%;
+  margin: 15px auto;
+  font-size: 14px;
+}
+
+section.reservation div.complete_line a img {
+  width: 90%;
+  margin: 0 auto;
+}
+
+section.reservation div.reservation_info {
+  margin-bottom: 70px;
+}
+
+section.reservation div.reservation_info h3 {
+  font-weight: normal;
+  font-size: 17px;
+}
+
+section.reservation div.reservation_info div.reservation_infoArea {
+  background-color: #FFEFFB;
+  font-size: 14px;
+  padding: 15px 0;
+}
+
+section.reservation div.reservation_info div.reservation_infoArea div.reservation_info_cnt {
+  display: flex;
+  justify-content: flex-start;
+  padding: 13px 0;
+  margin: 0 10px;
+}
+
+section.reservation div.reservation_info div.reservation_infoArea div.reservation_info_cnt:not(:first-child) {
+  border-top: 1px solid #fff;
+}
+
+section.reservation div.reservation_info div.reservation_infoArea div.reservation_info_cnt p.reservation_info_label {
+  width: 90px;
+}
+
+@media screen and (max-width: 330px) {
+  section.reservation .selector li{
+    letter-spacing: 0;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  /*
+  reservation
+  ===========================================*/
+  section.reservation div.reservation_flow ul.reservation_flow_content li {
+    margin: 0 10px;
+  }
+
+  section.reservation div.reservation_flow ul.reservation_flow_content li:not(:nth-child(3)) span::after {
+    right: -42px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  /*
+  reservation new
+  ===========================================*/
+  footer.footer_reservation > div {
+    margin: 0 auto;
+    max-width: 380px;
+    grid-template-areas: none;
+  }
+  section.reservation div.reservation_fv h2 {
+    padding: 10px 0;
+    margin: 30px 0;
+  }
+
+  section.reservation div.reservation_flow ul.reservation_flow_content li {
+    margin: 0 35px;
+  }
+
+  section.reservation div.reservation_flow ul.reservation_flow_content li:not(:nth-child(3)) span::after {
+    border-top: 2px solid #EFEFEF;
+    right: -60px;
+  }
+
+  section.reservation div.reservation_accordion div.reservation_accordion_head {
+    cursor: pointer;
+  }
+
+  section.reservation .selector li {
+    cursor: pointer;
+  }
+
+  section.reservation .calendarBody .rows > li.few, section.reservation .calendarBody .rows > li.empty {
+    cursor: pointer;
+  }
+
+}
