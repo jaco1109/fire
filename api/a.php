@@ -44,11 +44,19 @@
       height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 <div id="lpbox">
-  <p id="top_floating_banner">
-    <picture>
-      <source type="image/webp" srcset="img/webp/01_bnr.webp?20230522"><img src="img/01_bnr.jpg?20230522" alt="FIRE CLINIC-ファイヤークリニック-　オンライン診察、新宿院、渋谷院、銀座院、名古屋院">
-    </picture>
-  </p>
+  <div id="top_floating_banner">
+    <a href="/">
+      <img src="img/top_button_01.jpg" alt="FIRE CLINIC" width="191" height="77" loading="lazy">
+    </a>
+    <div>
+      <span class="cta__popup">
+        <img src="img/top_button_02.jpg" alt="無料カウンセリング予約" width="191" height="77" loading="lazy">
+      </span>
+      <span class="top_floating_banner_trigger">
+        <img src="img/top_button_03.jpg" alt="委員の場所を確認する" width="191" height="77" loading="lazy">
+      </span>
+    </div>
+  </div>
   <header id="fv">
     <div class="header" style="display:none; padding: 10px 16px;">
       <p style="width: 150px;margin-left: 0;">
@@ -58,30 +66,35 @@
     <h1><picture><source type="image/webp" srcset="img/webp/fv_01.webp"><img src="img/fv_01.png" alt="FIRE CLINIC-ファイヤークリニック-　新常識の医療ダイエットで痩せ体質を作る"></picture></h1>
     <p class="fv_02">
       <picture><source type="image/webp" srcset="img/webp/fv_02_ptnb.webp"><img src="img/fv_02_ptnb.png" alt="医師・管理栄養士によるオーダーメイド施術＆処方"></picture>
-      <picture class="fv_02_cta cta__popup"><source type="image/webp" srcset="img/webp/09_2_btn.webp?220710"><img src="img/09_2_btn.png?220710" alt="無料カウンセリングを予約"></picture>_
+      <picture class="fv_02_cta cta__popup"><img src="img/button_01.png" alt="無料カウンセリングを予約"></picture>_
     </p>
   </header>
 
   <section>
     <p><picture><source type="image/webp" srcset="img/webp/aboutus.webp?20230606"><img src="img/aboutus.jpg?20230606" alt="FIRE CLINICは我慢を必要としないダイエットを提供します。"></picture></p>
     <p><picture><source type="image/webp" srcset="img/webp/henkin_04.webp"><img src="img/henkin_04.jpg?220621" alt="途中解約OK! 21日以内なら全額返金保証"></picture></p>
+    <p style="padding-top: 16px;"><picture><source type="image/webp" srcset="img/webp/henkin_06.webp"><img src="img/henkin_06.jpg?220621" alt="メディカルダイエット"></picture></p>
+    <p><picture><img src="img/01.jpg" alt="さらに今なら!先着10名様限定!通常価格より最大50％OFF"></picture></p>
     <p><picture><source type="image/webp" srcset="img/webp/henkin_05.webp"><img src="img/henkin_05.jpg?220621" alt="まずは無料カウンセリングへ"></picture></p>
-    <p><picture><source type="image/webp" srcset="img/webp/henkin_06.webp"><img src="img/henkin_06.jpg?220621" alt="メディカルダイエット"></picture></p>
-    <div class="cta__box">
-      <p><picture><source type="image/webp" srcset="img/webp/henkin_08.webp?220621"><img src="img/henkin_08.png?220621" alt="土日祝も19時まで営業中 無料カウンセリングへ オンライン診察もOK!"></picture></p>
-      <div class="cta__btn">
-        <p class="cta__popup">
-          <picture><source type="image/webp" srcset="img/webp/henkin_07.webp?20230522"><img src="img/henkin_07.png?20230522" alt="枠"></picture>
-        </p>
-      </div>
-    </div>
+    <p><picture><img src="img/02.jpg" alt="カウンセリングは2つの方法からお選びいただけます"></picture></p>
+    <p style="padding-top: 8px;"><picture><img src="img/03.jpg" alt="1.オンラインにて 2.クリニックに来院"></picture></p>
+    <p style="padding-top: 8px;"><picture><img src="img/04.jpg" alt="相談だけでもOK!気軽にお申し込みください"></picture></p>
+  </section>
+
+  <section class="reflection-parent">
+    <a class="expand-non">
+      <p class="cta__popup">
+        <picture><img src="img/counseling.png" alt="無料カウンセリングへ ご予約はこちら"></picture>
+        <div class="reflection"></div>
+      </p>
+    </a>
   </section>
 
   <section class="monitor" id="monitor">
     <div>
       <a onclick="toggleMonitorModal()">
         <picture>
-          <source type="image/webp" srcset="img/webp/monitor2.webp"><img src="img/monitor2.png" alt="ダイエットモニター募集中">
+          <img src="img/05.jpg" alt="ダイエットモニター募集中">
         </picture>
       </a>
     </div>
@@ -100,15 +113,24 @@
   <section id="feature">
     <h2><picture><source type="image/webp" srcset="img/webp/feature_01.webp"><img src="img/feature_01.jpg" alt="最短2ヶ月で結果にコミット"></picture></h2>
     <picture><source type="image/webp" srcset="img/webp/feature_02.webp"><img src="img/feature_02.jpg" alt=""></picture>
-    <picture><source type="image/webp" srcset="img/webp/feature_03.webp"><img src="img/feature_03.jpg" alt=""></picture>
-    <div class="cta__item reflection-parent">
-      <a class="expand-non">
-        <p class="cta__popup">
-          <picture><source type="image/webp" srcset="img/webp/04_2_btn.webp?220710"><img src="img/04_2_btn.png?220710" alt="無料カウンセリングへ ご予約はこちら"></picture>
-          <div class="reflection"></div>
-        </p>
+    <section style="padding-top: 16px;" class="reflection-parent">
+    <a class="expand-non">
+      <p class="cta__popup">
+        <picture><img src="img/counseling.png" alt="無料カウンセリングへ ご予約はこちら"></picture>
+        <div class="reflection"></div>
+      </p>
+    </a>
+  </section>
+
+  <section class="monitor" id="monitor">
+    <div>
+      <a onclick="toggleMonitorModal()">
+        <picture>
+          <img src="img/05.jpg" alt="ダイエットモニター募集中">
+        </picture>
       </a>
     </div>
+  </section>
   </section>
 
   <section class="monitor" id="monitor">
@@ -166,21 +188,10 @@
       </div>
     </div>
 
-    <div class="cta" id="offer_fv">
-      <div id="fixstart"></div>
-      <div id="fixbtn">
-        <div class="fixbtn__box" id="fixbtn__box">
-        <div class="fv__btn cta__popup">
-          <div class="fv__item"><picture><source type="image/webp" srcset="img/webp/09_2_btn.webp?220710"><img src="img/09_2_btn.png?220710" alt="無料カウンセリングを予約"></picture></div>
-        </div>
-        </div>
-      </div>
-    </div>
-
     <div class="cta__item reflection-parent">
       <a class="expand-non">
         <p class="cta__popup">
-          <picture><source type="image/webp" srcset="img/webp/04_2_btn.webp?220710"><img src="img/04_2_btn.png?220710" alt="無料カウンセリングへ ご予約はこちら"></picture>
+          <picture><img src="img/counseling.png" alt="無料カウンセリングへ ご予約はこちら"></picture>
           <div class="reflection"></div>
         </p>
       </a>
@@ -271,16 +282,20 @@
     <p><picture><source type="image/webp" srcset="img/webp/henkin_02.webp"><img src="img/henkin_02.jpg?220621" alt="挑戦してみたい!変わりたい と思うものの"></picture></p>
     <p><picture><source type="image/webp" srcset="img/webp/henkin_03.webp"><img src="img/henkin_03.jpg?220621" alt="こんな不安ありますよね? 万が一こんな場合でも"></picture></p>
     <p><picture><source type="image/webp" srcset="img/webp/henkin_04.webp"><img src="img/henkin_04.jpg?220621" alt="途中解約OK! 21日以内なら全額返金保証"></picture></p>
+    <p style="padding-top: 16px;"><picture><source type="image/webp" srcset="img/webp/henkin_06.webp"><img src="img/henkin_06.jpg?220621" alt="メディカルダイエット"></picture></p>
+    <p><picture><img src="img/01.jpg" alt="さらに今なら!先着10名様限定!通常価格より最大50％OFF"></picture></p>
     <p><picture><source type="image/webp" srcset="img/webp/henkin_05.webp"><img src="img/henkin_05.jpg?220621" alt="まずは無料カウンセリングへ"></picture></p>
-    <p><picture><source type="image/webp" srcset="img/webp/henkin_06.webp"><img src="img/henkin_06.jpg?220621" alt="メディカルダイエット"></picture></p>
-    <div class="cta__box">
-      <p><picture><source type="image/webp" srcset="img/webp/henkin_08.webp?220621"><img src="img/henkin_08.png?220621" alt="土日祝も19時まで営業中 無料カウンセリングへ オンライン診察もOK!"></picture></p>
-      <div class="cta__btn">
-        <p class="cta__popup">
-          <picture><source type="image/webp" srcset="img/webp/henkin_07.webp?20230522"><img src="img/henkin_07.png?20230522" alt="枠"></picture>
+    <p><picture><img src="img/02.jpg" alt="カウンセリングは2つの方法からお選びいただけます"></picture></p>
+    <p style="padding-top: 8px;"><picture><img src="img/03.jpg" alt="1.オンラインにて 2.クリニックに来院"></picture></p>
+    <p style="padding-top: 8px;"><picture><img src="img/04.jpg" alt="相談だけでもOK!気軽にお申し込みください"></picture></p>
+    <p style="padding-bottom: 16px;" class="reflection-parent">
+      <a class="expand-non">
+        <p class="cta__popup" style="padding-bottom: 16px;">
+          <picture><img src="img/counseling.png" alt="無料カウンセリングへ ご予約はこちら"></picture>
+          <div class="reflection"></div>
         </p>
-      </div>
-    </div>
+      </a>
+    </p>
   </section>
 
   <section class="step">
@@ -435,7 +450,7 @@
         <div class="cta__item reflection-parent">
           <a class="expand-non">
             <p class="cta__popup">
-              <picture><source type="image/webp" srcset="img/webp/04_2_btn.webp?220710"><img src="img/04_2_btn.png?220710" alt="無料カウンセリングへ ご予約はこちら"></picture>
+              <picture><img src="img/counseling2.png" alt="無料カウンセリングへ ご予約はこちら"></picture>
               <div class="reflection"></div>
             </p>
           </a>
@@ -594,7 +609,7 @@
             <br><span>無料カウンセリング</span>を予約後
             <br>ご来院時にモニター希望とお伝えください。
           </p>
-          <p class="monitor_form_cta">
+          <p class="monitor_form_cta reflection-parent">
             <a href="https://www.fire-method.com/reservation/">
               <img src="img/09_2_btn.png" alt="無料カウンセリングへ ご予約はこちら">
             <div class="reflection"></div>
@@ -648,7 +663,7 @@
   <p class="add-pointer">
     <a href="https://www.fire-method.com/reservation/">
       <picture>
-        <source type="image/webp" srcset="img/webp/06_access_btn.webp?220423"><img src="img/06_access_btn.png?220423" alt="無料カウンセリングを予約">
+        <img src="img/button_02.png?220423" alt="無料カウンセリングを予約">
       </picture>
     </a>
   </p>
@@ -680,7 +695,7 @@
   <p class="add-pointer">
     <a href="https://www.fire-method.com/reservation/">
       <picture>
-        <source type="image/webp" srcset="img/webp/06_access_btn.webp?220423"><img src="img/06_access_btn.png?220423" alt="無料カウンセリングを予約">
+      <img src="img/button_03.png?220423" alt="無料カウンセリングを予約">
       </picture>
     </a>
   </p>
@@ -711,7 +726,7 @@
   <p class="add-pointer">
     <a href="https://www.fire-method.com/reservation/">
       <picture>
-        <source type="image/webp" srcset="img/webp/06_access_btn.webp?220423"><img src="img/06_access_btn.png?220423" alt="無料カウンセリングを予約">
+      <img src="img/button_04.png?220423" alt="無料カウンセリングを予約">
       </picture>
     </a>
   </p>
@@ -743,7 +758,7 @@
   <p class="add-pointer">
     <a href="https://www.fire-method.com/reservation/">
       <picture>
-        <source type="image/webp" srcset="img/webp/06_access_btn.webp?220423"><img src="img/06_access_btn.png?220423" alt="無料カウンセリングを予約">
+      <img src="img/button_05.png?220423" alt="無料カウンセリングを予約">
       </picture>
     </a>
   </p>
@@ -761,7 +776,7 @@
     </picture>
   </p>
   <p>
-    <picture><source type="image/webp" srcset="img/webp/popup_02.webp?220621"><img src="img/popup_02.jpg?220621" alt="無料カウンセリングはどんな内容なの?"></picture>
+    <picture><img src="img/popup_02.png" alt="無料カウンセリングはどんな内容なの?"></picture>
   </p>
 
   <div class="schedule">
