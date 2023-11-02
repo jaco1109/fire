@@ -64,21 +64,11 @@ $(function () {
   var hj = 0;
   var i = 0;
   var i2 = 0;
-  var fixstartOffset = $("#fixstart").offset().top - $(window).height();
-  var fixendOffset = $("#fixend").offset().top - $(window).height();
-  var fixbtnConf = "fixstartOffset >= sct ";
-
-  $(".cta").each(function () {
-    var ctaOfset = $(this).offset().top - $(window).height() * 0.5;
-    var ctaOfsetEnd =
-      $(this).offset().top + $(this).height() - $(window).height() * 0.5;
-    if (fixbtnConf != "") {
-      fixbtnConf = fixbtnConf + " || ";
-    }
-    fixbtnConf =
-      fixbtnConf + "( sct >= " + ctaOfset + " && " + ctaOfsetEnd + " >= sct )";
-  });
   $("body").bind("touchstart", function () {
+    scrollEvent();
+  });
+
+  $(window).scroll(function () {
     scrollEvent();
   });
 
@@ -101,11 +91,6 @@ $(function () {
       graph(92, 8, "#break__gr", "#f34877");
       i2++;
     }
-    if (eval(fixbtnConf + " || sct >= fixendOffset ")) {
-      $("#fixbtn").removeClass("fixbtn--visible");
-    } else {
-      $("#fixbtn").addClass("fixbtn--visible");
-    }
   }
 
   // デバイスサイズに応じてGooglemapを操作
@@ -127,48 +112,6 @@ $(function () {
     $(window).height() * 0.23 > 200
       ? $(".shop_map_2").css("height", $(window).height() * 0.23 + "px")
       : $(".shop_map_2").css("height", 200 + "px");
-  }
-});
-
-$(window).load(function () {
-  if ($("#fixbtn").length) {
-    //固定ボタン用
-
-    var fixstartOffset = $("#fixstart").offset().top - $(window).height();
-    var fixendOffset = $("#fixend").offset().top - $(window).height();
-    var fixbtnConf = "fixstartOffset >= sct ";
-
-    $(".cta").each(function () {
-      var ctaOfset = $(this).offset().top - $(window).height() * 0.5;
-      var ctaOfsetEnd =
-        $(this).offset().top + $(this).height() - $(window).height() * 0.5;
-      if (fixbtnConf != "") {
-        fixbtnConf = fixbtnConf + " || ";
-      }
-      fixbtnConf =
-        fixbtnConf +
-        "( sct >= " +
-        ctaOfset +
-        " && " +
-        ctaOfsetEnd +
-        " >= sct )";
-    });
-
-    $(window).scroll(function () {
-      scrollEvent2();
-    });
-    $("body").bind("touchstart", function () {
-      scrollEvent2();
-    });
-    function scrollEvent2() {
-      var sct = $(window).scrollTop();
-
-      if (eval(fixbtnConf + " || sct >= fixendOffset ")) {
-        $("#fixbtn").removeClass("fixbtn--visible");
-      } else {
-        $("#fixbtn").addClass("fixbtn--visible");
-      }
-    }
   }
 });
 
