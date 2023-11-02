@@ -1,0 +1,7 @@
+{
+  "functions": {
+    "api/a.php": {
+      "runtime": "now-php@0.0.7"
+    }
+  }
+}
