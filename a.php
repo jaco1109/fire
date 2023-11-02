@@ -133,6 +133,16 @@
   </section>
   </section>
 
+  <section class="monitor" id="monitor">
+    <div>
+      <a onclick="toggleMonitorModal()">
+        <picture>
+          <source type="image/webp" srcset="img/webp/monitor2.webp"><img src="img/monitor2.png" alt="ダイエットモニター募集中">
+        </picture>
+      </a>
+    </div>
+  </section>
+
   <section id="message" class="message">
     <h2><picture><source type="image/webp" srcset="img/webp/message_01_new.webp"><img src="img/message_01_new.jpg" alt="医師と専門スタッフがあなただけのプランを提案します"></picture></h2>
     <p><picture><source type="image/webp" srcset="img/webp/message_02_new.webp"><img src="img/message_02_new.jpg" alt="短期集中で成功するためのヒミツ ダイエットは我慢しなくていい時代です"></picture></p>
@@ -278,14 +288,14 @@
     <p><picture><img src="img/02.jpg" alt="カウンセリングは2つの方法からお選びいただけます"></picture></p>
     <p style="padding-top: 8px;"><picture><img src="img/03.jpg" alt="1.オンラインにて 2.クリニックに来院"></picture></p>
     <p style="padding-top: 8px;"><picture><img src="img/04.jpg" alt="相談だけでもOK!気軽にお申し込みください"></picture></p>
-    <section style="padding-bottom: 16px;" class="reflection-parent">
+    <p style="padding-bottom: 16px;" class="reflection-parent">
       <a class="expand-non">
-        <div class="cta__popup" style="padding-bottom: 16px;">
+        <p class="cta__popup" style="padding-bottom: 16px;">
           <picture><img src="img/counseling.png" alt="無料カウンセリングへ ご予約はこちら"></picture>
           <div class="reflection"></div>
-        </div>
+        </p>
       </a>
-    </section>
+    </p>
   </section>
 
   <section class="step">
