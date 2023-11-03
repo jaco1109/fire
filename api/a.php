@@ -81,11 +81,10 @@
     <p style="padding-top: 8px;"><picture><img src="img/04.jpg" alt="相談だけでもOK!気軽にお申し込みください"></picture></p>
   </section>
 
-  <section class="reflection-parent">
+  <section>
     <a class="expand-non">
       <p class="cta__popup">
         <picture><img src="img/counseling.png" alt="無料カウンセリングへ ご予約はこちら"></picture>
-        <div class="reflection"></div>
       </p>
     </a>
   </section>
@@ -113,11 +112,10 @@
   <section id="feature">
     <h2><picture><source type="image/webp" srcset="img/webp/feature_01.webp"><img src="img/feature_01.jpg" alt="最短2ヶ月で結果にコミット"></picture></h2>
     <picture><source type="image/webp" srcset="img/webp/feature_02.webp"><img src="img/feature_02.jpg" alt=""></picture>
-    <section style="padding-top: 16px;" class="reflection-parent">
+    <section style="padding-top: 16px;">
     <a class="expand-non">
       <p class="cta__popup">
         <picture><img src="img/counseling.png" alt="無料カウンセリングへ ご予約はこちら"></picture>
-        <div class="reflection"></div>
       </p>
     </a>
   </section>
@@ -178,11 +176,10 @@
       </div>
     </div>
 
-    <div class="cta__item reflection-parent">
+    <div class="cta__item">
       <a class="expand-non">
         <p class="cta__popup">
           <picture><img src="img/counseling.png" alt="無料カウンセリングへ ご予約はこちら"></picture>
-          <div class="reflection"></div>
         </p>
       </a>
     </div>
@@ -278,11 +275,10 @@
     <p><picture><img src="img/02.jpg" alt="カウンセリングは2つの方法からお選びいただけます"></picture></p>
     <p style="padding-top: 8px;"><picture><img src="img/03.jpg" alt="1.オンラインにて 2.クリニックに来院"></picture></p>
     <p style="padding-top: 8px;"><picture><img src="img/04.jpg" alt="相談だけでもOK!気軽にお申し込みください"></picture></p>
-    <section style="padding-bottom: 16px;" class="reflection-parent">
+    <section style="padding-bottom: 16px;">
       <a class="expand-non">
         <div class="cta__popup" style="padding-bottom: 16px;">
           <picture><img src="img/counseling.png" alt="無料カウンセリングへ ご予約はこちら"></picture>
-          <div class="reflection"></div>
         </div>
       </a>
     </section>
@@ -437,11 +433,10 @@
     <div class="cta__box">
       <p><picture><source type="image/webp" srcset="img/webp/cta_03.webp"><img src="img/cta_03.png" alt=""></picture></p>
       <div class="cta__btn">
-        <div class="cta__item reflection-parent">
+        <div class="cta__item">
           <a class="expand-non">
             <p class="cta__popup">
               <picture><img src="img/counseling2.png" alt="無料カウンセリングへ ご予約はこちら"></picture>
-              <div class="reflection"></div>
             </p>
           </a>
         </div>
@@ -599,10 +594,9 @@
             <br><span>無料カウンセリング</span>を予約後
             <br>ご来院時にモニター希望とお伝えください。
           </p>
-          <p class="monitor_form_cta reflection-parent">
+          <p class="monitor_form_cta">
             <a href="https://www.fire-method.com/reservation/">
               <img src="img/button_01.png" alt="無料カウンセリングへ ご予約はこちら">
-            <div class="reflection"></div>
             </a>
           </p>
         </div>
