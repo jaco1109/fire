@@ -45,9 +45,9 @@
   <!-- End Google Tag Manager (noscript) -->
 <div id="lpbox">
   <div id="top_floating_banner">
-    <a href="/">
+    <span>
       <img src="img/top_button_01.jpg" alt="FIRE CLINIC" width="191" height="77" loading="lazy">
-    </a>
+    </span>
     <div>
       <span class="cta__popup">
         <img src="img/top_button_02.jpg" alt="無料カウンセリング予約" width="191" height="77" loading="lazy">
@@ -457,7 +457,7 @@
   <div class="shop-panel">
     <p>
       <picture>
-        <source type="image/webp" srcset="img/webp/07_access_shibuya_short.webp?220423"><img src="img/07_access_shibuya_short.jpg?220423" alt="FIRE CLINIC-ファイヤークリニック-　渋谷院">
+        <img src="img/07_access_shibuya_short.jpg" alt="FIRE CLINIC-ファイヤークリニック-　渋谷院">
       </picture>
     </p>
     <div class="shop-photo">
@@ -624,7 +624,7 @@
   <div class="shop-panel">
     <p>
       <picture>
-        <source type="image/webp" srcset="img/webp/07_access_shibuya_short.webp?220423"><img src="img/07_access_shibuya_short.jpg?220423" alt="FIRE CLINIC-ファイヤークリニック-　渋谷院">
+        <img src="img/07_access_shibuya_short.jpg" alt="FIRE CLINIC-ファイヤークリニック-　渋谷院">
       </picture>
     </p>
     <div class="shop-photo">
@@ -749,11 +749,6 @@
 </div>
 
 <div class="modal" id="cta-popup">
-  <div class="yoyaku">
-    <div class="counseling">無料カウンセリング</div>
-    <a class="yoyaku-btn margin" href="https://www.fire-method.com/reservation/" target="_blank" rel="noreferrer">予約へすすむ</a>
-  </div>
-
   <p>
     <picture>
       <source type="image/webp" srcset="img/webp/popup_01.webp?220621"><img src="img/popup_01.jpg?220621" alt="無料カウンセリングはどんな疑問が解消できる?">
